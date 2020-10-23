@@ -67,12 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(index)
 
         // changes bg color
-        if (isClicked[index] == false) {
-            isClicked[index] = true;
-            squares[index].style.backgroundColor = 'red';
-        } else {
-            isClicked[index] = false;
-            squares[index].style.backgroundColor = '#536181';
+        if (index != 12) {
+            if (isClicked[index] == false) {
+                isClicked[index] = true;
+                squares[index].style.backgroundColor = 'red';
+            } else {
+                isClicked[index] = false;
+                squares[index].style.backgroundColor = '#536181';
+            }
         }
     }
 })
