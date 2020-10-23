@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // array for square click status
     var isClicked = new Array()
 
+    // array for clicked squares
+    var clicked = new Array()
+
     // adds a click status for every square
     for (var i = 0; i < squareArray.length; i++) {
         isClicked[i] = false
@@ -65,16 +68,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // when square is clicked
     function clickOutcome(e) {
         const index = squareArray.indexOf(e.target)
-        console.log(index)
 
         // changes bg color
         if (index != 12) {
             if (isClicked[index] == false) {
                 isClicked[index] = true;
                 squares[index].style.backgroundColor = 'red';
+                clicked.push(index)
             } else {
                 isClicked[index] = false;
                 squares[index].style.backgroundColor = '#536181';
+                deleteDoubleClick(index)
+            }
+        }
+        console.log(clicked)
+    }
+
+
+    function checkBingo() {
+        console.log('hi')
+    }
+
+    function deleteDoubleClick(number) {
+        for(var i = 0; i<clicked.length; i++) {
+            if(clicked[i] == number){
+                clicked.splice(i, 1)
             }
         }
     }
