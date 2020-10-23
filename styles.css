@@ -1,0 +1,26 @@
+body {
+    background-color: #536181;
+    text-align: center;
+}
+
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 770px;
+    height: 770px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+
+.grid div {
+    width: 150px;
+    height: 150px;
+    background-color: #536181;
+    margin-bottom: 5px;
+}
