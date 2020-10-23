@@ -48,7 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'melonen golem dono',
         'der reddit ist shit',
         'earrape',
-        'über 100€ top d'
+        'über 100€ top d',
+        'lost',
+        'digga',
+        'holy shit',
+        'yo bro',
+        'buddy',
+        
     ]
 
 
