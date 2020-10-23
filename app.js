@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const squares = document.querySelectorAll('.grid div')
+    const squares = document.querySelectorAll('.grid div');
 
     squares.forEach(square => {
-        square.addEventListener('click', clickOutcome)
+        square.addEventListener('click', clickOutcome);
     })
 
     // all squares
-    const squareArray = Array.from(squares)
+    const squareArray = Array.from(squares);
 
     // array for square click status
-    var isClicked = new Array()
+    var isClicked = new Array();
 
     // array for clicked squares
-    var clicked = new Array()
+    var clicked = new Array();
 
     // adds a click status for every square
     for (var i = 0; i < squareArray.length; i++) {
-        isClicked[i] = false
+        isClicked[i] = false;
     }
 
     // alle texte
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // sets random text from texts array
     for (var i = 0; i < squareArray.length; i++) {
-        var random = Math.floor(Math.random() * texts.length)
+        var random = Math.floor(Math.random() * texts.length);
         squares[i].innerHTML = texts[random];
         texts.splice(random, 1);
 
@@ -67,32 +67,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // when square is clicked
     function clickOutcome(e) {
-        const index = squareArray.indexOf(e.target)
+        const index = squareArray.indexOf(e.target);
 
         // changes bg color
         if (index != 12) {
             if (isClicked[index] == false) {
                 isClicked[index] = true;
                 squares[index].style.backgroundColor = 'red';
-                clicked.push(index)
+                clicked.push(index);
+                if (checkBingo() == true) {
+                    alert('POGGERS')
+                }
             } else {
                 isClicked[index] = false;
                 squares[index].style.backgroundColor = '#536181';
-                deleteDoubleClick(index)
+                deleteDoubleClick(index);
             }
         }
-        console.log(clicked)
+        console.log(clicked);
     }
 
 
     function checkBingo() {
-        console.log('hi')
+        // vertical lines
+        if(clicked.includes(0) && clicked.includes(1) && clicked.includes(2) && clicked.includes(3) && clicked.includes(4)) {
+            return true;
+        } else if(clicked.includes(5) && clicked.includes(6) && clicked.includes(7) && clicked.includes(8) && clicked.includes(9)){
+            return true;
+        } else if(clicked.includes(10) && clicked.includes(11) && clicked.includes(13) && clicked.includes(14)){
+            return true;
+        } else if(clicked.includes(15) && clicked.includes(16) && clicked.includes(17) && clicked.includes(18) && clicked.includes(19)){
+            return true;
+        } else if(clicked.includes(20) && clicked.includes(21) && clicked.includes(22) && clicked.includes(23) && clicked.includes(24)){
+            return true;
+        } 
+        // horizontal lines
+        else if(clicked.includes(0) && clicked.includes(5) && clicked.includes(10) && clicked.includes(15) && clicked.includes(20)){
+            return true;
+        } else if(clicked.includes(1) && clicked.includes(6) && clicked.includes(11) && clicked.includes(16) && clicked.includes(21)){
+            return true;
+        } else if(clicked.includes(2) && clicked.includes(7) && clicked.includes(17) && clicked.includes(22)){
+            return true;
+        } else if(clicked.includes(3) && clicked.includes(8) && clicked.includes(13) && clicked.includes(18) && clicked.includes(23)){
+            return true;
+        } else if(clicked.includes(4) && clicked.includes(9) && clicked.includes(14) && clicked.includes(19) && clicked.includes(24)){
+            return true;
+        } 
+        // diagonal lines
+        else if(clicked.includes(0) && clicked.includes(6) && clicked.includes(18) && clicked.includes(24)){
+            return true;
+        }
+
+        return false;
     }
 
     function deleteDoubleClick(number) {
         for(var i = 0; i<clicked.length; i++) {
             if(clicked[i] == number){
-                clicked.splice(i, 1)
+                clicked.splice(i, 1);
             }
         }
     }
