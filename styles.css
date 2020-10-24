@@ -45,4 +45,5 @@ header table th {
     display: flex;
     justify-content: center; /* align horizontally*/
     align-items: center; /* align vertically*/
+    cursor: pointer;
 }
