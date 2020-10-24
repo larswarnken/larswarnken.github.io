@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const squares = document.querySelectorAll('.grid div');
 
+    const resetButton = document.querySelector('.reset');
+
     // all squares can detect clicks
     squares.forEach(square => {
-        square.addEventListener('click', clickOutcome);
+        square.addEventListener('click', fieldClicked);
     })
+
+    // 
+    resetButton.addEventListener('click', resetFields);
 
     // all squares
     const squareArray = Array.from(squares);
@@ -71,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     squares[12].innerHTML = 'X';
     
     // when square is clicked
-    function clickOutcome(e) {
+    function fieldClicked(e) {
         const index = squareArray.indexOf(e.target);
 
         // changes bg color
@@ -133,5 +138,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 clicked.splice(i, 1);
             }
         }
+    }
+
+    // reloads page
+    function resetFields() {
+        location.reload();
     }
 })
