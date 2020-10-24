@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const squares = document.querySelectorAll('.grid div');
 
+    // all squares can detect clicks
     squares.forEach(square => {
         square.addEventListener('click', clickOutcome);
     })
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         isClicked[i] = false;
     }
 
-    // alle texte
+    // all texts
     var texts = [
         'shut up chat', 
         'dude', 
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'holy shit',
         'yo bro',
         'buddy',
+        'bühni'
         
     ]
 
@@ -67,9 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     squares[12].innerHTML = 'X';
     
-    
-
-
 
     // when square is clicked
     function clickOutcome(e) {
@@ -94,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    // checks for bingo in a bad way
     function checkBingo() {
         // vertical lines
         if(clicked.includes(0) && clicked.includes(1) && clicked.includes(2) && clicked.includes(3) && clicked.includes(4)) {
@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return false;
     }
 
+    // cheks whether a square has been already clicked
     function deleteDoubleClick(number) {
         for(var i = 0; i<clicked.length; i++) {
             if(clicked[i] == number){
