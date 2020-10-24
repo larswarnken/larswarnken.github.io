@@ -21,6 +21,7 @@ header table th {
     width: 50px;
     padding: 5px;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .grid {
