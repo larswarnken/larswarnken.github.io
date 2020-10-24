@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         square.addEventListener('click', fieldClicked);
     })
 
-    // 
+    // detects clicks on reset button
     resetButton.addEventListener('click', resetFields);
 
     // all squares
