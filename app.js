@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // all squares
     const squareArray = Array.from(squares);
 
+    // counter for center field clicked
+    var centerClicked = 0;
+
     // array for square click status
     var isClicked = new Array();
 
@@ -62,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'buddy',
         'bühni'
         
-    ]
+    ];
 
     // sets random text from texts array
     for (var i = 0; i < squareArray.length; i++) {
@@ -92,6 +95,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 isClicked[index] = false;
                 squares[index].style.backgroundColor = '#536181';
                 deleteDoubleClick(index);
+            }
+        } else {
+            centerClicked++;
+            if (centerClicked == 5) {
+                alert('stop clicking me WeirdChamp');
+                centerClicked = 0;
             }
         }
         console.log(clicked);
