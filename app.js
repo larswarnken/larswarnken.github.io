@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
     ]
 
-
     // sets random text from texts array
     for (var i = 0; i < squareArray.length; i++) {
         var random = Math.floor(Math.random() * texts.length);
@@ -67,9 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
         texts.splice(random, 1);
 
     }
+
+    // sets center field
     squares[12].innerHTML = 'X';
     
-
     // when square is clicked
     function clickOutcome(e) {
         const index = squareArray.indexOf(e.target);
@@ -92,8 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(clicked);
     }
 
-
-    // checks for bingo in a bad way
+    // checks for bingo (in a bad way)
     function checkBingo() {
         // vertical lines
         if(clicked.includes(0) && clicked.includes(1) && clicked.includes(2) && clicked.includes(3) && clicked.includes(4)) {
