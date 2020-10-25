@@ -45,8 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'was ist los babe',  
         '...ist trash',  
         'front gegen mods',  
-        'ufo bester deutscher rapper',  
-        'irgendwas mit basti',  
+        'ufo bester deutscher rapper', 
         'die weiber wa, alle gleich',  
         'i dont know',  
         'heute nur 3 songs',  
@@ -64,8 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'yo bro',
         'buddy',
         'bühni',
-        
-        
+        'ich bin verwirrt',
+        'dorfrapper dono',
+        'cringy youtube intro',
+        'aight chat',
+        'irgendein akku leer'
     ];
 
     // sets random text from texts array
