@@ -5,22 +5,35 @@ body {
     color: #C1CADF;
 }
 
-header table {
-    width: 99%;
+.leftEmpty {
+    display: none;
 }
 
-header table th {
-    width: 33%;
+.centerTitle {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.centerTitle h1 {
+    font-size: 80px;
+}
+
+.rightReset {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+}
 
 
 .reset {
     text-align: center;
     border: 1px solid  #C1CADF;
-    width: 50px;
+    width: 100px;
     padding: 5px;
     margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
 }
 
@@ -46,4 +59,65 @@ header table th {
     justify-content: center; /* align horizontally*/
     align-items: center; /* align vertically*/
     cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px) {
+    .top {
+        display: flex;
+    }
+    
+    .leftEmpty {
+        display: block;
+        width: 33%;
+    }
+
+    .centerTitle {
+        width: 33%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .centerTitle h1 {
+        font-size: 50px;
+    }
+
+    .rightReset {
+        width: 33%;
+        font-size: 20px;
+        padding-top: 9px;
+    }
+
+
+    .reset {
+        text-align: center;
+        border: 1px solid  #C1CADF;
+        width: 70px;
+        padding: 5px;
+        margin-right: 0px;
+        cursor: pointer;
+    }
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 620px;
+        height: 620px;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    
+    
+    .grid div {
+        width: 120px;
+        height: 120px;
+        background-color: #536181;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center; /* align horizontally*/
+        align-items: center; /* align vertically*/
+        cursor: pointer;
+    }
 }
