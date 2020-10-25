@@ -93,7 +93,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } else {
                 isClicked[index] = false;
-                squares[index].style.backgroundColor = '#536181';
+                
+                // mobile
+                if(screen.width <= 1000) {
+                    squares[index].style.backgroundColor = '#3c455c';
+                }
+                // pc
+                else {
+                    squares[index].style.backgroundColor = '#536181';
+                }
+
                 deleteDoubleClick(index);
             }
         } else {
