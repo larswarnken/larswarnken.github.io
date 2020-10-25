@@ -59,6 +59,7 @@ body {
     justify-content: center; /* align horizontally*/
     align-items: center; /* align vertically*/
     cursor: pointer;
+    font-size: 20px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -121,5 +122,6 @@ body {
         justify-content: center; /* align horizontally*/
         align-items: center; /* align vertically*/
         cursor: pointer;
+        font-size: 15px;
     }
 }
