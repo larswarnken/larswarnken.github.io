@@ -41,9 +41,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 620px;
-    height: 620px;
-    background-color: black;
+    width: 920px;
+    height: 920px;
+    background-color:  #C1CADF;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -51,9 +51,9 @@ body {
 
 
 .grid div {
-    width: 120px;
-    height: 120px;
-    background-color: #536181;
+    width: 180px;
+    height: 180px;
+    background-color: #45516d;
     margin-bottom: 5px;
     display: flex;
     justify-content: center; /* align horizontally*/
@@ -84,7 +84,9 @@ body {
     .rightReset {
         width: 33%;
         font-size: 20px;
-        padding-top: 9px;
+        padding-right: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
 
@@ -103,7 +105,7 @@ body {
         justify-content: space-between;
         width: 620px;
         height: 620px;
-        background-color: black;
+        background-color:  #C1CADF;
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
