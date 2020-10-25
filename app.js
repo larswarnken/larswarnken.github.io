@@ -63,7 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'holy shit',
         'yo bro',
         'buddy',
-        'bühni'
+        'bühni',
+        
         
     ];
 
