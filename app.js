@@ -92,7 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 squares[index].style.backgroundColor = 'red';
                 clicked.push(index);
                 if (checkBingo() == true) {
-                    alert('POGGERS')
+
+                    setTimeout(function() {
+                        alert('POGGERS')
+                    }, 100)
+
+                    
                 }
             } else {
                 isClicked[index] = false;
@@ -165,4 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function resetFields() {
         location.reload();
     }
+
+
 })
