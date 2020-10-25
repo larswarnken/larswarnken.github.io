@@ -30,28 +30,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // all texts
     var texts = [
-        'shut up chat', 
-        'dude', 
-        'top d only', 
-        'von dono gefrontet', 
-        'ich les alle subs', 
-        'sorry leute heute leider kein', 
-        'bullshit',  
-        'i guess',  
-        'ich war nur ... minuten zu spät', 
-        'no way',  
-        'den link skippen wir',  
-        'lösch dich',  
-        'was ist los babe',  
-        '...ist trash',  
-        'front gegen mods',  
-        'ufo bester deutscher rapper', 
-        'die weiber wa, alle gleich',  
-        'i dont know',  
-        'heute nur 3 songs',  
-        'dickes papaL',  
-        'milki wird getreten',  
-        'realtalk chat',  
+        'shut up chat',
+        'dude',
+        'top d only',
+        'von dono gefrontet',
+        'ich les alle subs',
+        'sorry leute heute leider kein',
+        'bullshit',
+        'i guess',
+        'ich war nur ... minuten zu spät',
+        'no way',
+        'den link skippen wir',
+        'lösch dich',
+        'was ist los babe',
+        '...ist trash',
+        'front gegen mods',
+        'ufo bester deutscher rapper',
+        'die weiber wa, alle gleich',
+        'i dont know',
+        'heute nur 3 songs',
+        'dickes papaL',
+        'milki wird getreten',
+        'realtalk chat',
         'david dobrik',
         'melonen golem dono',
         'der reddit ist shit',
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // sets center field
     squares[12].innerHTML = 'X';
-    
+
     // when square is clicked
     function fieldClicked(e) {
         const index = squareArray.indexOf(e.target);
@@ -96,9 +96,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } else {
                 isClicked[index] = false;
-                
+
                 // mobile
-                if(screen.width <= 1000) {
+                if (screen.width <= 1000) {
                     squares[index].style.backgroundColor = '#3c455c';
                 }
                 // pc
@@ -121,31 +121,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // checks for bingo (in a bad way)
     function checkBingo() {
         // vertical lines
-        if(clicked.includes(0) && clicked.includes(1) && clicked.includes(2) && clicked.includes(3) && clicked.includes(4)) {
+        if (clicked.includes(0) && clicked.includes(1) && clicked.includes(2) && clicked.includes(3) && clicked.includes(4)) {
             return true;
-        } else if(clicked.includes(5) && clicked.includes(6) && clicked.includes(7) && clicked.includes(8) && clicked.includes(9)){
+        } else if (clicked.includes(5) && clicked.includes(6) && clicked.includes(7) && clicked.includes(8) && clicked.includes(9)) {
             return true;
-        } else if(clicked.includes(10) && clicked.includes(11) && clicked.includes(13) && clicked.includes(14)){
+        } else if (clicked.includes(10) && clicked.includes(11) && clicked.includes(13) && clicked.includes(14)) {
             return true;
-        } else if(clicked.includes(15) && clicked.includes(16) && clicked.includes(17) && clicked.includes(18) && clicked.includes(19)){
+        } else if (clicked.includes(15) && clicked.includes(16) && clicked.includes(17) && clicked.includes(18) && clicked.includes(19)) {
             return true;
-        } else if(clicked.includes(20) && clicked.includes(21) && clicked.includes(22) && clicked.includes(23) && clicked.includes(24)){
+        } else if (clicked.includes(20) && clicked.includes(21) && clicked.includes(22) && clicked.includes(23) && clicked.includes(24)) {
             return true;
-        } 
+        }
         // horizontal lines
-        else if(clicked.includes(0) && clicked.includes(5) && clicked.includes(10) && clicked.includes(15) && clicked.includes(20)){
+        else if (clicked.includes(0) && clicked.includes(5) && clicked.includes(10) && clicked.includes(15) && clicked.includes(20)) {
             return true;
-        } else if(clicked.includes(1) && clicked.includes(6) && clicked.includes(11) && clicked.includes(16) && clicked.includes(21)){
+        } else if (clicked.includes(1) && clicked.includes(6) && clicked.includes(11) && clicked.includes(16) && clicked.includes(21)) {
             return true;
-        } else if(clicked.includes(2) && clicked.includes(7) && clicked.includes(17) && clicked.includes(22)){
+        } else if (clicked.includes(2) && clicked.includes(7) && clicked.includes(17) && clicked.includes(22)) {
             return true;
-        } else if(clicked.includes(3) && clicked.includes(8) && clicked.includes(13) && clicked.includes(18) && clicked.includes(23)){
+        } else if (clicked.includes(3) && clicked.includes(8) && clicked.includes(13) && clicked.includes(18) && clicked.includes(23)) {
             return true;
-        } else if(clicked.includes(4) && clicked.includes(9) && clicked.includes(14) && clicked.includes(19) && clicked.includes(24)){
+        } else if (clicked.includes(4) && clicked.includes(9) && clicked.includes(14) && clicked.includes(19) && clicked.includes(24)) {
             return true;
-        } 
+        }
         // diagonal lines
-        else if(clicked.includes(0) && clicked.includes(6) && clicked.includes(18) && clicked.includes(24)){
+        else if (clicked.includes(0) && clicked.includes(6) && clicked.includes(18) && clicked.includes(24)) {
             return true;
         }
 
@@ -154,8 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // cheks whether a square has been already clicked
     function deleteDoubleClick(number) {
-        for(var i = 0; i<clicked.length; i++) {
-            if(clicked[i] == number){
+        for (var i = 0; i < clicked.length; i++) {
+            if (clicked[i] == number) {
                 clicked.splice(i, 1);
             }
         }

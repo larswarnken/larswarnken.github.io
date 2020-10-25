@@ -5,6 +5,10 @@ body {
     color: #C1CADF;
 }
 
+.confetti {
+    width: 100%;
+}
+
 .leftEmpty {
     display: none;
 }
@@ -26,10 +30,9 @@ body {
     font-size: 40px;
 }
 
-
 .reset {
     text-align: center;
-    border: 1px solid  #C1CADF;
+    border: 1px solid #C1CADF;
     width: 100px;
     padding: 5px;
     margin-left: auto;
@@ -43,12 +46,11 @@ body {
     justify-content: space-between;
     width: 920px;
     height: 920px;
-    background-color:  #536181;
+    background-color: #536181;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
 }
-
 
 .grid div {
     width: 180px;
@@ -56,8 +58,10 @@ body {
     background-color: #3c455c;
     margin-bottom: 5px;
     display: flex;
-    justify-content: center; /* align horizontally*/
-    align-items: center; /* align vertically*/
+    justify-content: center;
+    /* align horizontally*/
+    align-items: center;
+    /* align vertically*/
     cursor: pointer;
     font-size: 25px;
 }
@@ -66,22 +70,18 @@ body {
     .top {
         display: flex;
     }
-    
     .leftEmpty {
         display: block;
         width: 33%;
     }
-
     .centerTitle {
         width: 33%;
         margin-left: auto;
         margin-right: auto;
     }
-
     .centerTitle h1 {
         font-size: 50px;
     }
-
     .rightReset {
         width: 33%;
         font-size: 20px;
@@ -89,38 +89,35 @@ body {
         margin-top: auto;
         margin-bottom: auto;
     }
-
-
     .reset {
         text-align: center;
-        border: 1px solid  #C1CADF;
+        border: 1px solid #C1CADF;
         width: 70px;
         padding: 5px;
         margin-right: 0px;
         cursor: pointer;
     }
-
     .grid {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 620px;
         height: 620px;
-        background-color:  #C1CADF;
+        background-color: #C1CADF;
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
     }
-    
-    
     .grid div {
         width: 120px;
         height: 120px;
         background-color: #536181;
         margin-bottom: 5px;
         display: flex;
-        justify-content: center; /* align horizontally*/
-        align-items: center; /* align vertically*/
+        justify-content: center;
+        /* align horizontally*/
+        align-items: center;
+        /* align vertically*/
         cursor: pointer;
         font-size: 15px;
     }
