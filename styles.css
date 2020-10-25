@@ -5,9 +5,15 @@ body {
     color: #C1CADF;
 }
 
-.confetti {
-    width: 100%;
+a {
+    color: #C1CADF;
+    text-decoration: none;
 }
+
+a:visited {
+    color: #C1CADF;
+    text-decoration: none;
+  }
 
 .leftEmpty {
     display: none;
