@@ -161,6 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // diagonal lines
         else if (clicked.includes(0) && clicked.includes(6) && clicked.includes(18) && clicked.includes(24)) {
             return true;
+        } else if (clicked.includes(4) && clicked.includes(8) && clicked.includes(16) && clicked.includes(20)) {
+            return true;
         }
 
         return false;
