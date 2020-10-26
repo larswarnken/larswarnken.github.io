@@ -72,6 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
         '*irgendein Akku leer*',
         '*billige Monte Stimme*',
         'You fimi?',
+        'obvious',
+        'Pokemon',
+        'actually',
+        '*zu spät*',
+
     ];
 
     // sets random text from texts array
