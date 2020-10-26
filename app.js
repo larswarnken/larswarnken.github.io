@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    // hör auf den code anzugucken
+
     const squares = document.querySelectorAll('.grid div');
 
     const resetButton = document.querySelector('.reset');
