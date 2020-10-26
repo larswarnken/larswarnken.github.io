@@ -95,9 +95,8 @@ a:active {
     width: 99%;
     position: fixed;
     bottom: 0%;
-    color: #5f6f96;
-    display: none;
-    
+    color:  #6879a1;
+    display: block;
 }
 
 .wordsList {
@@ -172,10 +171,12 @@ a:active {
         cursor: pointer;
         font-size: 15px;
     }
-
-    
-    @media only screen and (min-height: 800px) {
-        .bottomText {
-            display: block;
-        }
+    .bottomText {
+        display: none;
+    }
 }
+
+@media only screen and (min-height: 800px) {
+    .bottomText {
+        display: block;
+    }
