@@ -15,14 +15,16 @@ a:visited {
     text-decoration: none;
 }
 
-
 a:active {
     color: #C1CADF;
     text-decoration: none;
 }
 
 .leftEmpty {
-    display: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
 }
 
 .centerTitle {
@@ -43,6 +45,17 @@ a:active {
 }
 
 .reset {
+    text-align: center;
+    border: 1px solid #C1CADF;
+    width: 100px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.listButton {
+    display: none;
     text-align: center;
     border: 1px solid #C1CADF;
     width: 100px;
@@ -85,6 +98,18 @@ a:active {
     .leftEmpty {
         display: block;
         width: 33%;
+        font-size: 20px;
+        padding-left: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .listButton {
+        display: block;
+        text-align: center;
+        border: 1px solid #C1CADF;
+        width: 100px;
+        margin-left: 0px;
+        cursor: pointer;
     }
     .centerTitle {
         width: 33%;
@@ -95,6 +120,7 @@ a:active {
         font-size: 50px;
     }
     .rightReset {
+        display: block;
         width: 33%;
         font-size: 20px;
         padding-right: 50px;
@@ -105,7 +131,6 @@ a:active {
         text-align: center;
         border: 1px solid #C1CADF;
         width: 70px;
-        padding: 5px;
         margin-right: 0px;
         cursor: pointer;
     }
